@@ -2,6 +2,23 @@
 
 This is a Java application designed by students from the CSED Faculty of Engineering at Alexandria University.
 The program simulates a production line using the producer-consumer design pattern to address synchronization issues where different machines need to cooperate without data loss. The GUI is developed using JavaFX.
+## How to Run
+
+1. File > Open > [select the project folder].
+2. If you don't have JavaFX, download it first from [here](https://gluonhq.com/products/javafx/) and extract the zipped file.
+3. File > Project Structure > Libraries >
+   - Add new project library > Java > [select the folder of JavaFX] > Native Library Location.
+   - Inside the Library: Add > [select the folder lib from the folder of JavaFX].
+   - OK.
+4. Run > Edit Configurations >
+   - For class Main, add the following lines in VM options:
+   
+        --module-path [path of JavaFX library on your laptop]\lib --add-modules javafx.controls,javafx.fxml
+  
+   - Click OK.
+5. Run Main class.
+
+Note: These steps are to run the project on IntelliJ IDEA.
 
 ## UML Class Diagram
 
